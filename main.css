@@ -1,8 +1,117 @@
 /* Styles for Product Page Customization */
 /* NOTE: Do not edit the Bootstrap CSS files. */
-
+html{
+    
+}
 body {
     padding-top: 30px;
     padding-bottom: 20px;
-    color: green;
+    min-width: 900px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #4ABDAC;
 }
+
+
+/* begin editing title */
+h1{
+    transform: rotate(270deg);
+    position: fixed;
+    left: -50px;
+    top: 100px;
+    margin-top: 0;
+    background-color: green;
+}
+/* end editing title */
+/* begin nav bar */
+.nav-bar{
+    transform: rotate(270deg);
+    position: fixed;
+    right: -50px;
+    top: 0px;
+/*     width: 100%; */
+}
+.nav-bar ul{
+
+}
+.nav-bar li{
+    list-style-type: none;  
+    display: inline;
+/*     padding: 30px; */
+}
+/* begin editing purchase */
+.purchase{
+    background-color: red;
+    position: fixed;
+    width: 219px;
+    right: 100px;
+    padding: 10px;
+}
+/* end editing purchase */
+/* begin editing share */
+.share{
+    background-color: pink;
+    position: fixed;
+    width: 219px;
+    right: 100px;
+    padding:10px;
+    top: 230px;
+}
+/* end editing share */
+/* begin editing about */
+.about{
+    background-color: yellow;
+    width: 780px;
+    boreder: 8px;
+}
+/* end editing about */
+/* begin editing video */
+.video{
+    background-color: greenyellow;
+    height: 350px;
+    width: 780px;
+    border: 8px;
+}
+/* end editing video */
+/* begin editing features */
+.features{
+    background-color: yellowgreen;
+    width: 780px;
+}
+/*  end editing features */
+.pictures{
+    background-color: orange;
+    width: 780px;
+    height: 350px;
+}
+/* end editing features */
+/* begin editing testimonial */
+.testimonial{
+    background-color: goldenrod;
+    width: 780px;
+    height: 500px;
+}
+.Obi, .Guin, .unnamed{
+    background-color: purple;
+    width: 255px;
+    height: 447px;
+    float: left;
+}
+.obi{
+}
+.guin{
+  position: fixed;
+  left: 260px;
+  float: clear;
+}
+
+
+
+
+
+
+
+
+
+
+

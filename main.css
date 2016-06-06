@@ -1,111 +1,334 @@
-/* Styles for Product Page Customization */
-/* NOTE: Do not edit the Bootstrap CSS files. */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
 html{
-    
 }
 body {
     padding-top: 30px;
     padding-bottom: 20px;
     min-width: 900px;
-    padding-left: 10%;
-    padding-right: 10%;
-    background-color: #4ABDAC;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #e9ece5;
 }
+/* page font family */
+p, li{
+    font-family: 'Open Sans Condensed';
+    font-size: 1.2em;
+    color: white;
 
+}
 
 /* begin editing title */
 h1{
     transform: rotate(270deg);
     position: fixed;
-    left: -50px;
-    top: 100px;
+    left: -170px;
+    top: 240px;
+    font-weight: 200;
     margin-top: 0;
-    background-color: green;
+    font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
+    font-size: 75px;
+    color: #3b3a36;
+    clear: both;
 }
+/* begin color scheme */
+#about, #video, #features, #pictures, #testimonial{
+    background-color: #b3c2bf;
+    width: 545px;    
+}
+h2, h3{
+    font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
+    color: white;
+    font-weight: 200;
+    background-color: #3b3a36;
+    padding: 10px;
+}
+
 /* end editing title */
 /* begin nav bar */
 .nav-bar{
-    transform: rotate(270deg);
     position: fixed;
-    right: -50px;
-    top: 0px;
-/*     width: 100%; */
+    top: 0;
+    left: 0px;
+    border: 2px solid black;
+    width: 100%;
+    background-color: #3b3a36;
+    height: 50px;
 }
-.nav-bar ul{
-
+.page-nav:link{
+    color: #3b3a36;
+    text-decoration: none;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.page-nav:visited{
+    color: #3b3a36;
+}
+.page-nav:hover{
+    background-color: #e9ece5;
+    transition-duration: .5s;
 }
 .nav-bar li{
     list-style-type: none;  
     display: inline;
-/*     padding: 30px; */
+}
+.nav-bar li{
+    width: 20%;
+}
+.nav-bar ul{
+    margin: 5px;
+    left: 100px;
+}
+.info{
+		display: none;
+		height: 400px;
+		width: 220px;
+}
+.info:hover{
+		display: block;
+}
+.page-nav{
+    background-color: #ccc;
+    margin: none;
+    top: 0px;
+    font-size: 25px;
+    border: 2px solid black;
+    display: inline; 
+    height: 50px;
+    left: 100px;
 }
 /* begin editing purchase */
 .purchase{
-    background-color: red;
+    background-color: #ccc;
     position: fixed;
+    left: 665px;
+    clear: left;
     width: 219px;
-    right: 100px;
+    top: 58px;
+    opacity: .9;
+    text-align: center;
+}
+.purchase ul{
+    padding-left: 0;
+}
+.purchase li{
+    list-style-type: none;
+}
+.purchase h2{
+    margin-top: 0;
     padding: 10px;
 }
+.purchase a{
+    color: #3b3a36;
+}
 /* end editing purchase */
+
 /* begin editing share */
 .share{
-    background-color: pink;
+/*     background-color: #c0dfd9; */
     position: fixed;
     width: 219px;
-    right: 100px;
-    padding:10px;
-    top: 230px;
+    left: 665px;
+    top: 260px;
+    background-color: #ccc;
+	  border: 10px;
+	  text-align: center;
+    font-size: 20px;
+}
+.share h2{
+    margin-top: 0;
+    font-size: 99%;
+    padding: 10px;
+}
+.share ul{
+    padding-left: 0;
+}
+/* Wrapper */
+.icon-button {
+	background-color: white;
+	border-radius: 3.6rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 2.0rem;
+	height: 3.6rem;
+	line-height: 3.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 3.6rem;
+}
+
+/* Circle */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 3.6rem;
+	height: 3.6rem;
+	border-radius: 3.6rem;
+	margin: -1.8rem;
+}
+.twitter span {
+	background-color: #4099ff;
+}
+.facebook span {
+	background-color: #3B5998;
+}
+.google-plus span {
+	background-color: #db5a3c;
+}
+
+/* Icons */
+.icon-button i {
+	background: none;
+	color: white;
+	height: 3.6rem;
+	left: 0;
+	line-height: 3.6rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 3.6rem;
+	z-index: 10;
+}
+.icon-button .icon-twitter {
+	color: #4099ff;
+}
+.icon-button .icon-facebook {
+	color: #3B5998;
+}
+.icon-button .icon-google-plus {
+	color: #db5a3c;
+}
+.icon-button:hover .icon-twitter,
+.icon-button:hover .icon-facebook,
+.icon-button:hover .icon-google-plus {
+	color: white;
 }
 /* end editing share */
 /* begin editing about */
-.about{
-    background-color: yellow;
-    width: 780px;
-    boreder: 8px;
+#about{
+    border: 8px;
+}
+.about-header{
+    margin-bottom: 0;
+}
+p, li{
+    font-family: 'Open Sans Condensed';
+}
+#about p{
+    color: white;
+    padding: 5px;
+    margin-top: 0;
+    text-align: center;
 }
 /* end editing about */
 /* begin editing video */
-.video{
-    background-color: greenyellow;
-    height: 350px;
-    width: 780px;
+#video{
+    height: 300px;
     border: 8px;
 }
-/* end editing video */
-/* begin editing features */
-.features{
-    background-color: yellowgreen;
-    width: 780px;
+iframe{
+    padding: 5px;
 }
-/*  end editing features */
-.pictures{
-    background-color: orange;
-    width: 780px;
-    height: 350px;
+/* end editing video */
+/* begin editing pictures */
+#pictures{
+    height: 785px;
+}
+.container{
+		padding-left: 8px;
+/* 		padding-right: 5px; */
+}
+#pictures img{
+    width: 100%;
+    height: auto;
+}
+#pictures .img{
+    width: 250px;
+    height: 215px;
+    float: left;
+    border: 2px solid #3b3a36;
+    margin: 5px;
+    align-content: center;
+}
+.img{
+    background-color: #e9ece5;
+}
+.img:hover{
+    background-color: #c0dfd9;
+    transition: 1s;
+}
+.img p{
+    margin: 0;
+    font-size: 20px;
+    color: #3b3a36;
+    
+}
+/* begin editing features */
+#features ul{
+    list-style-image: ('design/images/guinbullet.jpg');
 }
 /* end editing features */
 /* begin editing testimonial */
-.testimonial{
-    background-color: goldenrod;
-    width: 780px;
-    height: 500px;
+#testimonial{
+/*     width: 780px; */
+    height: 385px;
+    margin: none;
 }
-.Obi, .Guin, .unnamed{
-    background-color: purple;
-    width: 255px;
-    height: 447px;
+#testimonial h2{
+    margin-bottom: 2px;
+}
+.Obi, .Guin, .Weasley{
+    width: 32%;
+    height: 325px;
     float: left;
+    margin: .5px;
+    align-content: center;
+    border: 2px solid black;
+    background-color: #c0dfdq9;
+    opacity: .9;
+    overflow: scroll;
 }
-.obi{
-}
-.guin{
-  position: fixed;
-  left: 260px;
-  float: clear;
-}
+.Obi h3, .Guin h3, .Weasley h3{
+    margin: 0;
+    background-color: #ccc;
+    color: #3b3a36;
 
-
+}
+.Obi p, .Guin p, .Weasley p{
+    margin-top: 0;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.Obi{
+    margin-left: 4px;
+}
+/* pictures for testimonials */
+.Guin img, .Obi img, .Weasley img{
+    width: 100%;
+    height: auto;
+}
 
 
 
